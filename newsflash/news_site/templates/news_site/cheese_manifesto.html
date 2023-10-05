@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %} 
+
+{% block content %}
+<div id="content">
+    <div id="center">
+      <div id="the_loop">
+        <p class="address"><a href="{% url 'index-view' %}">Cheese news</a></p>
+        <div class="post">
+            <div class="the_content">
+                <h1>Cheese Lovers Manifesto</h1>
+    <p>In a world where taste buds yearn for satisfaction, we, the devoted cheese lovers, rise to proclaim the grandeur of cheese! Listen closely, for we present the Cheese Lovers Manifesto, a testament to the irresistible allure of this culinary marvel.</p>
+    <p>Cheese, the embodiment of artistry and craftsmanship, is a symbol of gastronomic excellence. From the velvety smoothness of aged cheddars to the pungent embrace of Roquefort, each cheese variety tells a story. It captivates our senses with its captivating aroma, tantalizing flavors, and diverse textures.</p>
+    <p>Our love for cheese knows no bounds. It transcends borders, cultures, and societal divides, uniting us under its flavorful umbrella. It sparks conversations, bridges gaps, and invites us to savor the wonders of the world on a single plate.</p>
+    <p>In the pursuit of cheese knowledge, we advocate for a cheese news revolution. We seek the latest cheese news, a portal that unravels the mysteries, trends, and innovations within the cheese realm. Let it be a beacon guiding us through the vast universe of curds and whey, offering insights and discoveries that deepen our appreciation.</p>
+    <p>Long Live Cheese!</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

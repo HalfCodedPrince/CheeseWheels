@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %} 
+
+{% block content %}
+
+
+      <div id="content">
+        <div id="center">
+          <div id="the_loop">
+            <p class="address"><a href="{% url 'index-view' %}">Cheese news</a> &raquo; <a href="{% url "post-detail-page" post.slug %}">{{ post.title }}</a></p>
+            <div class="post">
+              <h2><a href="{% url "post-detail-page" post.slug %}">{{ post.title }}</a></h2>
+                {% if post.image %}
+                <img src="{{ post.image.url }}" alt="Square Image" class="square-image">
+                {% else %}
+                  
+                {% endif %}
+              <p class="postmeta">{{ post.date }} | <a href="#">Leave a comment</a></p>
+              <div class="the_content">
+                {{ tag.tag }}
+                {{ post.post_field | linebreaks }}
+                <div class="the_author"> <img alt="" src="{% static 'images/author_default.gif' %}" class="avatar avatar-64 photo" height="64" width="64" />
+                  <h3><span>Written by</span> <a href="{% url 'author_posts' post.author.slug %}">{{ post.author }}</a></h3>
+                  <p>{{ post.author.author_desc | linebreaks }}</p>
+                  <div id="author_meta"></div>
+                  <!-- /author_meta -->
+                </div>
+                <!-- /the_author -->
+              </div>
+              <!-- /the_content -->
+               <p class="details">Tags:
+                {% for tag in post.tag.all %}
+                  <a href="{% url 'tag_post_list' tag.slug %}">{{ tag.tag }}
+                </a>
+                {% endfor %}
+              </p>       
+            </div>
+          </div>
+
+          
+{% endblock %}
+

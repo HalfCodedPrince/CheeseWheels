@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %} 
+
+{% block content %}
+
+{% if results %}
+  <h2>Search Results for "{{ search_query }}"</h2>
+  <ul>
+    {% for result in results %}
+        <h3><a href="{% url 'post-detail-page' result.slug %}">{{ result.title }}</a></h3>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No results found for "{{ search_query }}".</p>
+{% endif %}
+
+{% endblock %}
+

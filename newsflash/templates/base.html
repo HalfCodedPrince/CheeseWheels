@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    {% block css_files %}{% endblock %}
+    <div id="wrapper">
+        <!-- /feeds -->
+        <div id="topbar"> </div>
+        <!-- /topbar -->
+        <div id="header">
+          <h1><a href="{% url 'index-view' %}">Scrappy cheese news!</a></h1>
+          <h2>Serving best cheese news on a plate of comfy mid-2000s web</h2>
+        </div>
+        <!-- /header -->
+        <form method="get" id="searchform" action="{% url 'search-view' %}">
+          <input type="text" value="Search this website..."  onfocus="if (this.value == 'Search this website...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search this website...';}" name="s" id="s" />
+          <input type="submit" id="searchsubmit" value="Go" />
+        </form>
+        <div id="nav">
+          <ul id="menu">
+            <li class="current_page_item"><a href="{% url 'index-view' %}">Home</a></li>
+            <li><a href="{% url "cheese-page" %}">Cheese!</a></li>
+            <li><a href="{% url "random-page" %}">Random</a></li>
+            <li><a href="#">Would you like to know more?</a>
+              <ul>
+                <li><a href="{% url "cheese-manifesto" %}">About us</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Cheese">About cheese</a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      {% comment %} We don't close the wrapper so it can wrap. I'll figure out later how to make it more neat. {% endcomment %}
+</head>
+<body>
+{% block content %}{% endblock %}
+</body>
+</html>
+

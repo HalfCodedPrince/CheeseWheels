@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %} 
+
+{% block content %}
+<img src="{% static 'images/thats-cheese.jpg' %}"/>
+<div id="content">
+    <div id="center">
+        <div id="the_loop">
+            <div class="post">
+                <div class="the_content">
+                    <h2>Yep, that's cheese!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
