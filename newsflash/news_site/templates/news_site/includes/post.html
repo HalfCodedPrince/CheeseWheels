@@ -1,4 +1,4 @@
-
+{% load custom_filters %}
 <div id="content">
     <div id="center">
       <div id="headline">
@@ -9,7 +9,7 @@
             {% else %}
             <p></p>
             {% endif %}
-            <p>{{ post.post_field|slice:":400"|linebreaks }}</p>
+            <p>{{ post.post_field|truncate_words_at:200|linebreaks }}</p>
             <p><a href="{% url "post-detail-page" post.slug %}">Read more!</a></p>
         </div>
     </div>
