@@ -1,6 +1,7 @@
 # CheeseWheels
 
 Things to do:
+
 <b>SHORT TERM</b>
 - fix text cutoff
 - adjust the search bar
