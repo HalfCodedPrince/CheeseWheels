@@ -1,11 +1,17 @@
 # CheeseWheels
 
 Things to do:
+
 <b>SHORT TERM</b>
-- fix text cutoff
-- adjust the search bar
-- actually generate several texts to serve as an example
-- same with the pictures
+* (DONE) fix text cutoff
+--* (DONE) figure out custom filters and fix commit history
+* (DONE) adjust the search bar
+* (DONE) actually generate several texts to serve as an example
+* (DONE) same with the pictures
+-- fix the text formatting on the previews
+-- fix the text formatting in tne post view 
+-- adjust the picture window
+-- adjust the text boundaries
 
 - figure out working with git API
 - set up a page for the demonstration purposes
@@ -16,6 +22,7 @@ Things to do:
 - make comments
 - make auto-moderator
 - make sessions
+- CSS pass
 
 <b>EVEN LONGER TERM</b>
 - set it up to work with ChatGPT API

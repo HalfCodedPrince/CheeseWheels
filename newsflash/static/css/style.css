@@ -76,8 +76,11 @@ body {
   padding: 0.1875rem 0.125rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   width: 14.0625rem;
+  height: 2rem;
   background-color: #f4f1e9;
+  margin-top: 0.4375rem;
   margin-right: 0;
+  font-size: 1rem;
 }
 
 #searchform input#searchsubmit {
