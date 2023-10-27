@@ -9,11 +9,12 @@ Things to do:
 * (DONE) actually generate several texts to serve as an example
 * (DONE) same with the pictures
 *** (DONE) fix the text formatting on the previews
--- remove the custom filters, there are built-in ones with the same functionality
--- order posts in the index page from the newest
+*** (DONE) remove the custom filters, there are built-in ones with the same functionality
+*** (DONE) order posts in the index page from the newest
 -- gray out the text in the end + make Read more more visible
--- fix the text formatting in tne post view 
--- adjust the picture window
+* (DONE) fix the text formatting in tne post view 
+* (DONE) adjust the picture window
+-- fix the obvious CSS issues
 -- adjust the text boundaries
 
 - figure out working with git API

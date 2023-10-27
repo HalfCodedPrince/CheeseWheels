@@ -22,7 +22,7 @@
               <p class="postmeta">{{ post.date }} | <a href="#">Leave a comment</a></p>
               <div class="the_content">
                 {{ tag.tag }}
-                {{ post.post_field | linebreaks }}
+                {{ post.post_field | safe }}
                 <div class="the_author"> <img alt="" src="{% static 'images/author_default.gif' %}" class="avatar avatar-64 photo" height="64" width="64" />
                   <h3><span>Written by</span> <a href="{% url 'author_posts' post.author.slug %}">{{ post.author }}</a></h3>
                   <p>{{ post.author.author_desc | linebreaks }}</p>

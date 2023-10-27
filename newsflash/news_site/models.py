@@ -2,6 +2,7 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.utils.text import slugify
 from django.urls import reverse
+from ckeditor.fields import RichTextField
 # Create your models here.
 
 class Tag(models.Model):
@@ -35,7 +36,7 @@ class Site(models.Model):
 
 class Post(models.Model):
     title = models.CharField(_("Title"), max_length=50)
-    post_field = models.TextField(_("Post_Field"))
+    post_field = RichTextField(_("Post_Field"))
     date = models.DateField(auto_now=True)
     slug = models.SlugField(unique=True, db_index=True)
     author = models.ForeignKey(

@@ -1,4 +1,3 @@
-{% load custom_filters %}
 <div id="content">
     <div id="center">
       <div id="headline">
@@ -9,7 +8,7 @@
             {% else %}
             <p></p>
             {% endif %}
-            <p>{{ post.post_field |truncatewords_html:200 |linebreaks }}</p>
+            <p class="fade-out-text">{{ post.post_field |truncatewords_html:200 |safe }}</p>
             <p><a href="{% url "post-detail-page" post.slug %}">Read more!</a></p>
         </div>
     </div>
