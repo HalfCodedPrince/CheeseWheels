@@ -4,11 +4,14 @@ Things to do:
 
 <b>SHORT TERM</b>
 * (DONE) fix text cutoff
---* (DONE) figure out custom filters and fix commit history
+*** (DONE) figure out custom filters and fix commit history
 * (DONE) adjust the search bar
 * (DONE) actually generate several texts to serve as an example
 * (DONE) same with the pictures
--- fix the text formatting on the previews
+*** (DONE) fix the text formatting on the previews
+-- remove the custom filters, there are built-in ones with the same functionality
+-- order posts in the index page from the newest
+-- gray out the text in the end + make Read more more visible
 -- fix the text formatting in tne post view 
 -- adjust the picture window
 -- adjust the text boundaries
