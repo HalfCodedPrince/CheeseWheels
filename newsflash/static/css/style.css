@@ -1,11 +1,12 @@
 @charset "utf-8";
 
-* {
+* { 
   margin: 0;
   padding: 0;
 }
 
 body {
+
   background-color: #1a1c1d; 
   background-position: top center;
   margin: 0.5rem;
@@ -14,6 +15,35 @@ body {
   color: #333333;
 }
 
+/* an here begin my own classes*/
+
+.preview-divider {
+  overflow: hidden;
+}
+
+.previewtext {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  padding-right: 1rem;
+}
+
+.read-more-link {
+  padding-right: 1rem;
+  color: #ff0000;
+  font-weight: bold; 
+}
+
+.square-image {
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  float: left;
+  margin-right: 1.2rem;
+  }
+  
+
+
+/* an here end my own classes*/
 
 #topbar {
   height: 0.625rem;
@@ -230,16 +260,6 @@ ul#menu li ul {
 	background-position: top;
 	background-repeat: no-repeat;
 	overflow: hidden;
-  }
-
-  
-.square-image {
-  max-width: 400px;
-  max-height: 400px;
-  width: auto;
-  height: auto;
-  float: left;
-  margin-right: 1.5rem;
   }
 
   

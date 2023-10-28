@@ -1,6 +1,5 @@
 <div id="content">
-    <div id="center">
-      <div id="headline">
+    <div id="headline" >
         <h2><a href="{% url "post-detail-page" post.slug %}">{{ post.title }}</a></h2>
         <p class="postmeta" style="margin-bottom:2px;"> {{ post.date }}| <a href="#">Add a Comment</a></p>
             {% if post.image %}
@@ -8,9 +7,14 @@
             {% else %}
             <p></p>
             {% endif %}
-            <p class="fade-out-text">{{ post.post_field |truncatewords_html:200 |safe }}</p>
-            <p><a href="{% url "post-detail-page" post.slug %}">Read more!</a></p>
+            <div class="preview-divider">
+            <div class="previewtext">
+            <p >{{ post.post_field |truncatewords_html:200 |safe }}</p>
+            </div>
+            <div class="read-more-link"><p><a href="{% url "post-detail-page" post.slug %}">Read more!</a></p>
+            </div>
+            </div>
         </div>
-    </div>
 </div>
+
 
