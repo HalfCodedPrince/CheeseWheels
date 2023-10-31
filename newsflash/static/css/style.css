@@ -47,7 +47,6 @@ body {
 
 #topbar {
   height: 0.625rem;
-  width: 61.125rem;
   background-color: #373b3d;
   border-bottom: #444647 0.0625rem solid;
   font-size: 0;
@@ -55,7 +54,6 @@ body {
 
 #wrapper {
   background-color: #ffffff;
-  width: 61.125rem;
   margin: 0 0;
   position: relative;
 }
@@ -97,7 +95,7 @@ body {
 
 #searchform {
   position: absolute;
-  left: 43.6875rem;
+  left: 44rem;
   margin-top: 0.3125rem;
 }
 
@@ -127,7 +125,6 @@ body {
 
 ul#menu,
 .menu ul {
-	width: 61.13rem; /* 974px / 16px */
 	height: 4.0625rem; /* 33px / 16px */
 	background-color: #d5c6a6;
 	list-style-type: none;
@@ -252,7 +249,6 @@ ul#menu li ul {
   #latest,
   #the_loop,
   #comments_template {
-	width: 58.5rem;
 	margin: 0.625rem;
 	padding: 0.625rem;
 	border: 0.0625rem solid #daccb0;

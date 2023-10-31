@@ -21,7 +21,6 @@
           <input type="text" value="Search this website..."  onfocus="if (this.value == 'Search this website...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search this website...';}" name="s" id="s" />
           <input type="submit" id="searchsubmit" value="Go" />
         </form>
-        <div id="nav">
           <ul id="menu">
             <li class="current_page_item"><a href="{% url 'index-view' %}">Home</a></li>
             <li><a href="{% url "cheese-page" %}">Cheese!</a></li>
@@ -33,7 +32,7 @@
               </ul>
             </li>
           </ul>
-        </div>
+        {% comment %} </div> {% endcomment %}
       {% comment %} We don't close the wrapper so it can wrap. I'll figure out later how to make it more neat. {% endcomment %}
 </head>
 <body>
