@@ -26,10 +26,13 @@
         - [x] eh, good enough for now
 
 
-- [ ] remove css.backup and add workplace files to
-- [ ] figure out working with git API
-- [ ] set up a page for the demonstration purposes
-
+- [x] remove css.backup 
+- [x] figure out working with git API
+- [x] set up a page for the demonstration purposes
+- [x] we're live, ladies and gentlebeings: http://cheese-2-env.eba-enzzcpaq.eu-north-1.elasticbeanstalk.com/
+    - [ ] do I actually need .pyc cache files here?
+    - [ ] make a github pages page.
+    - [ ] branch out of production
 
 <b>LONG TERM</b>
 - [ ] migrate to postgress
